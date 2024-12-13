@@ -9,4 +9,5 @@
     $plantilla = new ControladorPlantillla();
 
     $plantilla->ctrPlantilla();
+    
 ?>

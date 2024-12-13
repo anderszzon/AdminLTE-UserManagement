@@ -119,7 +119,7 @@
             <form method="post" enctype="multipart/form-data">
 
                 <div class="form-group has-feedback" bis_skin_checked="1">
-                    <input type="text" class="form-control" name="nom_perfil" placeholder="nombre">
+                    <input type="text" class="form-control" name="nom_usuarios" placeholder="nombre">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
 
@@ -136,22 +136,31 @@
                 <div class="form-group has-feedback" bis_skin_checked="1">
                     <div class="btn btn-default btn-file" bis_skin_checked="1">
                         <i class="fas fa-paperclip"></i> Adjuntar Imagen de perfil
-                        <input type="file" name="subirImgPerfil">
+                        <input type="file" name="subirImgusuarios">
                     </div>
                     <img class="previsualizarImgPerfil img-fluid py-2" width="200" height="200">
                     <p class="help-block small">Dimensiones: 480px * 382px Peso Max. 2MB Formato: JPG o PNG</p>
                 </div>
 
                 <div class="form-group has-feedback">
-                
                     <label>Rol</label>
-
+                    <select class="form-control" name="cat_user" required>
+                                    <option value="1">admin</option>
+                                    <option value="2">vendedor</option>
+                    </select>
                 </div>
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Cerrar</button>
                     <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
+
+                <?php
+
+                    $guardarusuarios = new ctrUsuarios();
+                    $guardarusuarios->ctrGuardarusuarios();
+
+                ?>
                 
             </form>
 

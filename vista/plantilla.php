@@ -28,6 +28,10 @@
        folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="vista/recursos/dist/css/skins/_all-skins.min.css">
 
+    <!--<script src="vista/js/sweetalert2.all.js"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
